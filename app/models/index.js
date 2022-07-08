@@ -28,6 +28,7 @@ db.user = require("../models/user.model.js")(sequelize, Sequelize);
 db.role = require("../models/role.model.js")(sequelize, Sequelize);
 ////yo 5/7
 db.formatos = require("./formato.model.js")(sequelize, Sequelize);
+db.formatos_subidos = require("./formato_subido.model.js")(sequelize, Sequelize);
 //
 
 

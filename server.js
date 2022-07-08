@@ -39,6 +39,7 @@ require('./app/routes/user.routes')(app);
 ///nuevo 5/7
 require("./app/routes/turorial.routes")(app);
 require("./app/routes/formato.routes")(app);
+require("./app/routes/formato_subido.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 9090;

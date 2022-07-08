@@ -15,27 +15,6 @@ module.exports = app => {
     router.delete("/:id", formatos_subidos.delete);
     // Delete all Tutorials
     router.delete("/", formatos_subidos.deleteAll);
-    app.use('/api/formatos_subido', router);
+    app.use('/api/formatos_subidos', router);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
   };
