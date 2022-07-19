@@ -47,4 +47,19 @@ db.user.belongsToMany(db.role, {
 
 db.ROLES = ["user", "admin", "moderator"];
 
+
+
+db.PPP = require("./PPP.model.js")(sequelize, Sequelize);
+db.evaluacion = require("./evaluacion.model.js")(sequelize, Sequelize);
+// db.PPP.belongsToMany(db.user, {
+//   through: "PPP_user",
+//   foreignKey: "PPPId",
+//   otherKey: "userId"
+// });
+// db.user.belongsToMany(db.PPP, { 
+//   through: "PPP_user",
+//   foreignKey: "userId",
+//   otherKey: "PPPId"
+// });
+
 module.exports = db;
