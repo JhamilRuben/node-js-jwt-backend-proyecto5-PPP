@@ -18,24 +18,4 @@ module.exports = app => {
     app.use('/api/formatos_subido', router);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
   };

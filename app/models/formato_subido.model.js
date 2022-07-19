@@ -1,5 +1,5 @@
 module.exports = (sequelize, Sequelize) => {
-    const Formato_subido = sequelize.define("formato_subido", {
+    const Formato_subido = sequelize.define("formatosubido", {
       title: {
         type: Sequelize.STRING
 
@@ -10,4 +10,4 @@ module.exports = (sequelize, Sequelize) => {
     });
   
     return Formato_subido;
-  };
+  }; 

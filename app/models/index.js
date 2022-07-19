@@ -28,6 +28,7 @@ db.user = require("../models/user.model.js")(sequelize, Sequelize);
 db.role = require("../models/role.model.js")(sequelize, Sequelize);
 ////yo 5/7
 db.formatos = require("./formato.model.js")(sequelize, Sequelize);
+db.formatos_subidos = require("./formato_subido.model.js")(sequelize, Sequelize);
 //
 
 
@@ -45,5 +46,20 @@ db.user.belongsToMany(db.role, {
 });
 
 db.ROLES = ["user", "admin", "moderator"];
+
+
+
+db.PPP = require("./PPP.model.js")(sequelize, Sequelize);
+db.evaluacion = require("./evaluacion.model.js")(sequelize, Sequelize);
+// db.PPP.belongsToMany(db.user, {
+//   through: "PPP_user",
+//   foreignKey: "PPPId",
+//   otherKey: "userId"
+// });
+// db.user.belongsToMany(db.PPP, { 
+//   through: "PPP_user",
+//   foreignKey: "userId",
+//   otherKey: "PPPId"
+// });
 
 module.exports = db;
