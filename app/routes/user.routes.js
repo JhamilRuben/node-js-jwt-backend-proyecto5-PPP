@@ -18,7 +18,7 @@ var router = require("express").Router();
     next();
   });
 
-  router.get("/yyy/idd", userr.yyy);
+ router.get("/yyy/idd", userr.yyy);
 
   app.get("/api/test/all", controller.allAccess);
   app.get(
@@ -26,12 +26,18 @@ var router = require("express").Router();
     // Retrieve all Formatos
   // app.get(
   //   "/api/test/user/formatos",[authJwt.verifyToken],controllerFormato.userf);
+
   
   
   
   ////ayer-----------------------------------------------
   // app.get(
   //   "/api/test/user/formatos", [authJwt.verifyToken],controllerFormato.findAll);
+=======
+  app.get(
+    "/api/test/user/formatos",  // [authJwt.verifyToken],controllerFormato.findAll
+  );
+
   /////////////////////////////////// app.use('/api/user', controller);
   app.get(
     "/api/test/mod",[authJwt.verifyToken, authJwt.isModerator],controller.moderatorBoard);
@@ -39,6 +45,9 @@ var router = require("express").Router();
     "/api/test/admin",[authJwt.verifyToken, authJwt.isAdmin],controller.adminBoard);
 
 
+
   app.use('/api/usuarios', router);
+
+=======
 
 };
