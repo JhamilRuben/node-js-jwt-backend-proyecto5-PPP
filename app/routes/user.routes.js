@@ -33,7 +33,7 @@ var router = require("express").Router();
   ////ayer-----------------------------------------------
   // app.get(
   //   "/api/test/user/formatos", [authJwt.verifyToken],controllerFormato.findAll);
-=======
+
   app.get(
     "/api/test/user/formatos",  // [authJwt.verifyToken],controllerFormato.findAll
   );
@@ -48,6 +48,6 @@ var router = require("express").Router();
 
   app.use('/api/usuarios', router);
 
-=======
+
 
 };
